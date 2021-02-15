@@ -1,143 +1,337 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Développeur fullstack en recherche d'emploi - John Doe</title>
-        <meta charset="utf-8"/>
-        <meta name="author" content="john doe"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta name="description" content="Hello, je suis John Doe, développeur fullstack spécialisé React/Tailwind, actuellement en poste chez Blablacar dans la ville de Paris, France."/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Développeur fullstack en recherche d'emploi - John Doe"/>
-        <meta property="og:image" content="https://nicolasbrondin.github.io/john-doe/src/img/open-graph.jpg"/>
-        <meta property="og:description" content="Hello, je suis John Doe, développeur fullstack spécialisé React/Tailwind, actuellement en poste chez Blablacar dans la ville de Paris, France."/>
-        <meta name="twitter:title" content="Développeur fullstack en recherche d'emploi - John Doe"/>
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:image" content="https://nicolasbrondin.github.io/john-doe/src/img/open-graph.jpg"/>
-        <meta name="twitter:description" content="Hello, je suis John Doe, développeur fullstack spécialisé React/Tailwind, actuellement en poste chez Blablacar dans la ville de Paris, France."/>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="./src/css/base.css"/>
-        <link rel="stylesheet" href="./src/css/card.css"/>
-        <link rel="stylesheet" href="./src/css/thumbnail.css"/>
-        <link rel="stylesheet" href="./src/css/path.css"/>
-        <link rel="stylesheet" href="./src/css/skill-box.css"/>
-        <link rel="stylesheet" href="./src/css/list.css"/>
-        <link rel="favicon" href="./src/img/favicon.png"/>
-    </head>
-    <body>
-        <div class="page">
-            <div class="card" id="person">
-                <img id="person-picture" src=""/>
-                <img id="person-country" src="https://image.flaticon.com/icons/svg/197/197560.svg"/>
-                <section>
-                    <h1 id="person-fullname"></h1>
-                    <h2 id="person-job"></h2>
-                    <p>Hello, je suis <strong id="person-firstname"></strong>, <strong id="person-position"></strong> spécialisé(e) en <strong id="person-speciality"></strong> actuellement <strong id="person-company"></strong> dans la ville de <strong id="person-city">Nantes</strong>.</p>
-                    <div>
-                        <a class="button" target="_blank" id="person-email">M'envoyer un email</a>
-                        <span class="or"> ou </span>
-                        <a target="_blank" class="button" href="https://welovedevs.com">Voir mon CV</a>
-                    </div>
-                    <hr/>
-                </section>
-                <section>
-                    <h3>Compétences</h3>
-                    <ul class="list">
-                        <li>
-                            <div class="skill-box">
-                                Javascript
-                                <div class="box-well">
-                                    <span><img src="./src/img/star.svg" height="12"/></span>
-                                    <span><img src="./src/img/star.svg" height="12"/></span>
-                                    <span><img src="./src/img/star.svg" height="12"/></span>
-                                    <span><img src="./src/img/star.svg" height="12"/></span>
-                                    <span><img src="./src/img/star.svg" height="12"/></span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-box">
-                                Python
-                                <div class="box-well">
-                                    <span><img src="./src/img/star.svg" height="12"/></span>
-                                    <span><img src="./src/img/star.svg" height="12"/></span>
-                                    <span disabled><img src="./src/img/star.svg" height="12"/></span>
-                                    <span disabled><img src="./src/img/star.svg" height="12"/></span>
-                                    <span disabled><img src="./src/img/star.svg" height="12"/></span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-box">
-                                CSS
-                                <div class="box-well">
-                                    <span><img src="./src/img/star.svg" height="12"/></span>
-                                    <span><img src="./src/img/star.svg" height="12"/></span>
-                                    <span><img src="./src/img/star.svg" height="12"/></span>
-                                    <span disabled><img src="./src/img/star.svg" height="12"/></span>
-                                    <span disabled><img src="./src/img/star.svg" height="12"/></span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-box">
-                                Git
-                                <div class="box-well">
-                                    <span><img src="./src/img/star.svg" height="12"/></span>
-                                    <span><img src="./src/img/star.svg" height="12"/></span>
-                                    <span><img src="./src/img/star.svg" height="12"/></span>
-                                    <span><img src="./src/img/star.svg" height="12"/></span>
-                                    <span disabled><img src="./src/img/star.svg" height="12"/></span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <hr/>
-                </section>
-                <section>
-                    <h3>Réalisations</h3>
-                    <div class="thumbnail" >
-                        <div class="thumbnail-cover" style="background-image: url(https://source.unsplash.com/random/800*600?code)"></div>
-                        <div class="thumbnail-content">
-                            <span class="badge">Game Jam</span>
-                            <p class="thumbnail-title">Pac-Man </p>
-                            <p class="thumbnail-description">Une version de pac-man avec une surprise en plus...</p>
-                            <div class="thumbnail-footer">
-                                <a href="google.fr" target="_blank">En savoir plus</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thumbnail" >
-                        <div class="thumbnail-cover" style="background-image: url(https://source.unsplash.com/random/800*600?shop)"></div>
-                        <div class="thumbnail-content">
-                            <span class="badge">Application</span>
-                            <p class="thumbnail-title">Shop'n Go </p>
-                            <p class="thumbnail-description">Application d'achat en ligne sécurisé from scratch</p>
-                            <div class="thumbnail-footer">
-                                <a href="google.fr" target="_blank">En savoir plus</a>
-                            </div>
-                        </div>
-                    </div>
-                    <hr/>
-                </section>
-                <section>
-                    <h3>Parcours</h3>
-                    <div class="path">
-                        <div class="step">
-                            <p class="step-title">Google - 2018 à 2020</p>
-                            <p>Développeur fullstack React/Go sur l'application Google Maps</p>
-                        </div>
-                        <div class="step">
-                            <p class="step-title">Stage de fin d'études - Juin 2018</p>
-                            <p>Création d'une application de mise en relation entre particuliers et professionnels</p>
-                        </div>
-                        <div class="step">
-                            <p class="step-title">Wild code school - 2018</p>
-                            <p>Dîplomé d'un titre professionnel de développeur web et web mobile</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <script src="./src/js/main.js"></script>
-    </body>
+
+<head>
+	<title>Développeur web en recherche d'emploi - Dimitri Basseguy</title>
+	<meta charset="utf-8" />
+	<meta name="author" content="Dimitri Basseguy" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description"
+		content="Hello, je suis Dimitri Basseguy, développeur web spécialisé Symfony/React, actuellement en recherche d'un emploi" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Développeur web en recherche d'emploi - Dimitri Basseguy" />
+	<meta property="og:image" content="https://www.dimitri-basseguy.fr/src/img/twitter-capture.png" />
+	<meta property="og:description"
+		content="Hello, je suis Dimitri Basseguy, développeur web spécialisé Symfony/React, actuellement en recherche d'un emploi" />
+	<meta name="twitter:title" content="Développeur web en recherche d'emploi - Dimitri Basseguy" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://www.dimitri-basseguy.fr/src/img/twitter-capture.png" />
+	<meta name="twitter:description"
+		content="Hello, je suis Dimitri Basseguy, développeur web spécialisé Symfony/React, actuellement en recherche d'un emploi" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./src/css/hover.css" media="all">
+	<link rel="stylesheet" href="./src/css/base.css" />
+	<link rel="stylesheet" href="./src/css/card.css" />
+	<link rel="stylesheet" href="./src/css/thumbnail.css" />
+	<link rel="stylesheet" href="./src/css/path.css" />
+	<link rel="stylesheet" href="./src/css/skill-box.css" />
+	<link rel="stylesheet" href="./src/css/list.css" />
+	<link rel="icon" type="image/png" href="https://www.dimitri-basseguy.fr/src/img/favicon.png">
+	<!-- <link rel="favicon" href="https://www.dimitri-basseguy.fr/src/img/favicon.png" /> -->
+</head>
+
+<body>
+	<div class="page">
+		<div class="card" id="person">
+			<img id="person-picture" />
+			<img id="person-country" src="https://image.flaticon.com/icons/svg/197/197560.svg" />
+			<section>
+				<h1 id="person-fullname">Dimitri Basseguy</h1>
+				<h2 id="person-job">Développeur web</h2>
+				<h2 id="person-job"></h2>
+				<p>Bonjour ! <strong>Je suis à la recherche d’un poste/stage en tant que développeur web.</strong>
+					📚 Je viens de terminer ma reconversion de développeur web (option Symfony - j’apprend React en ce
+					moment).
+				</p>
+				<p>🚀 Créatif de nature, curieux et promouvant la cohésion et esprit d'équipe, je souhaite désormais mettre mes
+					compétences au profit de votre entreprise et vous faire part de toute ma motivation à relever de nouveaux
+					défis. Mes nombreuses expériences en tant qu'infographiste et Chef de projet Web-marketing m’ont permis de
+					développer une vision 360 dans la gestion de projets web, de la communication et la réalisation Web & Print.
+				</p>
+
+				<p>📍 Secteur : Lyon (ou télé-travail)</p>
+				<p>🗓 Disponibilité : Immédiate</p>
+				<div class="malt">
+					<a class="hvr-float-shadow button" target="_blank" id="person-email" href="#">Me contacter</a>
+					<span class="or"> ou </span>
+					<a target="_blank" class="hvr-float-shadow button" href="https://www.malt.fr/profile/dimitribasseguy">Let's
+						work together...</a>
+					<img src="./src/img/coffee.gif" alt="" class="coffee">
+				</div>
+				<hr />
+			</section>
+			<!-- compétences -->
+			<section>
+				<h3>Compétences</h3>
+				<ul class="list">
+					<li>
+						<div class="skill-box">
+							Php
+							<div class="box-well">
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="skill-box">
+							Javascript
+							<div class="box-well">
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="skill-box">
+							Html
+							<div class="box-well">
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="skill-box">
+							Css, Scss
+							<div class="box-well">
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="skill-box">
+							Symfony
+							<div class="box-well">
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="skill-box">
+							React
+							<div class="box-well">
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="skill-box">
+							Bootstrap
+							<div class="box-well">
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="skill-box">
+							MySQL
+							<div class="box-well">
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="skill-box">
+							Apache
+							<div class="box-well">
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="skill-box">
+							Git
+							<div class="box-well">
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+								<span disabled><img src="./src/img/star.svg" height="12" /></span>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<hr />
+			</section>
+			<!-- réalisations -->
+			<section>
+				<h3>Réalisations</h3>
+				<div class="thumbnail">
+					<div class="thumbnail-cover"
+						style="background-image: url(https://www.dimitri-basseguy.fr/assets/img/mdst.jpeg)">
+					</div>
+					<div class="thumbnail-content">
+						<span class="badge">Symfony | React</span>
+						<p class="thumbnail-title">My Dev Skill Tree</p>
+						<p class="thumbnail-description">Votre niveau de dev selon vos skills</p>
+						<div class="thumbnail-footer hvr-float-shadow">
+							<a href="https://www.dimitri-basseguy.fr/MyDevSkillTree/" target="_blank">En savoir plus</a>
+						</div>
+					</div>
+				</div>
+				<div class="thumbnail">
+					<div class="thumbnail-cover"
+						style="background-image: url(https://www.dimitri-basseguy.fr/assets/img/gradient.png)">
+					</div>
+					<div class="thumbnail-content">
+						<span class="badge">React</span>
+						<p class="thumbnail-title">React gradient</p>
+						<p class="thumbnail-description">Générateur de dégradés avec react</p>
+						<div class="thumbnail-footer hvr-float-shadow">
+							<a href="https://www.dimitri-basseguy.fr/gradient/" target="_blank">En savoir plus</a>
+						</div>
+					</div>
+				</div>
+				<div class="thumbnail">
+					<div class="thumbnail-cover"
+						style="background-image: url(https://www.dimitri-basseguy.fr/assets/img/scifi.png)">
+					</div>
+					<div class="thumbnail-content">
+						<span class="badge">Symfony</span>
+						<p class="thumbnail-title">Sci-fi Paradise</p>
+						<p class="thumbnail-description">Votez pour vos livres de SF favoris</p>
+						<div class="thumbnail-footer hvr-float-shadow">
+							<a href="https://www.dimitri-basseguy.fr/Sci-fi-Paradise/" target="_blank">En savoir plus</a>
+						</div>
+					</div>
+				</div>
+				<div class="thumbnail">
+					<div class="thumbnail-cover"
+						style="background-image: url(https://www.dimitri-basseguy.fr/assets/img/todolist.png)">
+					</div>
+					<div class="thumbnail-content">
+						<span class="badge">React</span>
+						<p class="thumbnail-title">Todo list</p>
+						<p class="thumbnail-description">Petite liste de tâches avec react</p>
+						<div class="thumbnail-footer hvr-float-shadow">
+							<a href="https://todolistreactdimitri.netlify.app/" target="_blank">En savoir plus</a>
+						</div>
+					</div>
+				</div>
+				<div class="thumbnail">
+					<div class="thumbnail-cover"
+						style="background-image: url(https://www.dimitri-basseguy.fr/assets/img/Shadowrun4Wiki.jpeg)">
+					</div>
+					<div class="thumbnail-content">
+						<span class="badge">React</span>
+						<p class="thumbnail-title">Shadowrun-wiki</p>
+						<p class="thumbnail-description">Web app pour mon groupe de joueur shadowrun 4 (rpg)</p>
+						<div class="thumbnail-footer hvr-float-shadow">
+							<a href="https://todolistreactdimitri.netlify.app/" target="_blank">En savoir plus</a>
+						</div>
+					</div>
+				</div>
+				<hr />
+			</section>
+			<!-- parcours -->
+			<section>
+				<h3>Parcours</h3>
+				<div class="path">
+					<div class="step">
+						<p class="step-title"><b>Freelance - 2020 à Aujourd’hui</b></p>
+						<p>Web-marketing - Web-design</p>
+					</div>
+					<div class="step">
+						<p class="step-title"><b>Certification Responsive Web Design Developer - 2020</b></p>
+						<p>Representing approximately 300 hours of coursework..
+							<a href="https://www.freecodecamp.org/certification/dimitri-basseguy/responsive-web-design"
+								target="_blank" rel="noopener noreferrer">Vérification</a>
+						</p>
+					</div>
+					<div class="step">
+						<p class="step-title"><b>Certification Opquast Maîtrise de la qualité en projet Web - 2020</b></p>
+						<p>Bonne connaissance des règles qualité Web et du vocabulaire associé. Capacités à comprendre et
+							échanger avec les autres professionnels du Web.
+							<a href="https://directory.opquast.com/fr/certificat/MEJW0I/" target="_blank"
+								rel="noopener noreferrer">Vérification</a>
+						</p>
+					</div>
+					<div class="step">
+						<p class="step-title"><b>Ecole O'clock - 2019 à 2020</b></p>
+						<p>Développeur Web & Mobile (730h). Formation labellisée Grande Ecole du
+							Numérique.</p>
+					</div>
+					<div class="step">
+						<p class="step-title"><b>Certification Voltaire - 2018</b></p>
+						<p>Score : 604 pts. <a href="https://www.certificat-voltaire.fr/orthographe-recruteur?code=4K9KFU"
+								target="_blank" rel="noopener noreferrer">code de vérification : 4K9KFU</a></p>
+					</div>
+					<div class="step">
+						<p class="step-title"><b>Chef de projet web-marketing - 2015 à 2017</b></p>
+						<p>Shogunmoto.com, SEO, SEA, Shopping, Google ads, Facebook ads, Bing Ads. Gérer la relation client au
+							travers du CRM, e-mailing. Animation d’une communauté. Refonte du site web (design responsive), web design
+							et ux.</p>
+					</div>
+					<div class="step">
+						<p class="step-title"><b>Manager restauration - 2011 à 2015</b></p>
+						<p>Gestion d’un restaurant thaï <i>miam!</i></p>
+					</div>
+					<div class="step">
+						<p class="step-title"><b>Web-marketing - 2010 à 2011</b></p>
+						<p>Shogunmoto.com, Web marketing SEO/SEA, web design, Publicité sur site. E-mailling</p>
+					</div>
+					<div class="step">
+						<p class="step-title"><b>Infographiste - 2000 à 2009</b></p>
+						<p>Maquettiste Créa/éxé. Logo, plaquettes, flyer etc...</p>
+					</div>
+					<div class="step">
+						<p class="step-title"><b>Opérateur en Infographie - 1998 à 2000</b></p>
+						<p>Diplôme PAO obtenu. (CFA de la communication multimédia et des arts graphiques)</p>
+					</div>
+				</div>
+				<hr />
+			</section>
+			<section>
+				<div class="flex flex-column">
+					<div><img
+							src="https://camo.githubusercontent.com/1c224408efaee93a907d1044dd3c71632afd80a2dfb40018a15f19dc6ffe8685/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d64696d697472692d6261737365677579"
+							alt=""></div>
+					<img
+						src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&theme=synthwave&layout=compact"
+						alt="">
+					<img
+						src="https://github-readme-stats.vercel.app/api?username=dimitri-basseguy&theme=synthwave&show_icons=true"
+						alt="">
+				</div>
+			</section>
+		</div>
+	</div>
+	<!-- <script src="./src/js/main.js"></script> -->
+</body>
+
 </html>
