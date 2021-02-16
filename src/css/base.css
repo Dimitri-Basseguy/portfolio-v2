@@ -76,15 +76,23 @@ hr {
 [disabled]{
   opacity: 0.3;
 }
+
 .malt{
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
 }
+
 .coffee{
   width: 50px;
   display: inline-block;
+}
+
+@media screen and (max-width: 575px){
+  .github-stats {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px){
