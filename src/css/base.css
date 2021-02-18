@@ -12,6 +12,7 @@ body {
   background: linear-gradient(-45deg, #FF11F4, #FF1F69, #27A7FF, #01F4FA);
 	background-size: 400% 400%;
 	animation: gradient 40s ease infinite;
+  scroll-behavior: smooth;
 }
 
 @keyframes gradient {
@@ -44,6 +45,10 @@ body {
   overflow-y: auto;
 }
 
+.services {
+  
+}
+
 .page>* {
   margin: auto;
 }
@@ -73,6 +78,22 @@ hr {
   color: white;
 }
 
+.button--work {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgba(0,0,0,0.1);
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.button--work:hover {
+  background: #f39c12;
+  color: white;
+}
+
 [disabled]{
   opacity: 0.3;
 }
@@ -87,6 +108,16 @@ hr {
 .coffee{
   width: 50px;
   display: inline-block;
+}
+
+.nav__link:hover {
+  color: #3498db;
+}
+
+.tarif {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 575px){

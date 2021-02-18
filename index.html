@@ -27,6 +27,7 @@
 	<link rel="stylesheet" href="./src/css/path.css" />
 	<link rel="stylesheet" href="./src/css/skill-box.css" />
 	<link rel="stylesheet" href="./src/css/list.css" />
+	<link rel="stylesheet" href="./src/css/tabs.css" />
 	<link rel="icon" type="image/png" href="https://www.dimitri-basseguy.fr/src/img/favicon.png">
 	<!-- <link rel="favicon" href="https://www.dimitri-basseguy.fr/src/img/favicon.png" /> -->
 </head>
@@ -39,7 +40,11 @@
 			<section>
 				<h1 id="person-fullname">Dimitri Basseguy</h1>
 				<h2 id="person-job">Développeur web</h2>
-				<h2 id="person-job"></h2>
+				<nav>
+					<a class="nav__link" href="#real">Mes réalisations</a>
+					-
+					<a class="nav__link" href="#parcours">Mon parcours</a>
+				</nav>
 				<p>Bonjour ! <strong>Je suis à la recherche d’un poste/stage en tant que développeur web.</strong>
 					📚 Je viens de terminer ma reconversion de développeur web (option Symfony - j’apprend React en ce
 					moment).
@@ -55,10 +60,104 @@
 				<div class="malt">
 					<a class="hvr-float-shadow button" target="_blank" id="person-email"
 						href="https://www.linkedin.com/in/dimitri-basseguy/">Me contacter</a>
-					<span class="or"> ou </span>
-					<a target="_blank" class="hvr-float-shadow button" href="https://www.malt.fr/profile/dimitribasseguy">Let's
-						work together...</a>
-					<img src="./src/img/coffee.gif" alt="" class="coffee">
+					<!-- <span class="or"> ou </span> -->
+				</div>
+				<hr />
+			</section>
+			<!-- services -->
+			<section>
+				<div class="services">
+					<h3>Services</h3>
+					<div class="tab">
+						<button class="tablinks" onclick="openCity(event, 'Pao')">PAO (print)</button>
+						<button class="tablinks" onclick="openCity(event, 'identite')">Identité</button>
+						<button class="tablinks" onclick="openCity(event, 'web-marketing')">Web-marketing</button>
+						<button class="tablinks" onclick="openCity(event, 'Vitrine')">Site web</button>
+					</div>
+					<div id="Pao" class="tabcontent">
+						<h3>PAO (print)</h3>
+						<p class="tarif"><em>Catalogue | brochure | flyer | dépliant - </em><img src="src/img/monney.png"> 50 € /h
+						</p>
+						<p>Réalisation de votre Catalogue sur Indesign Livraison d'un PDF Haute définition (300 dpi format pour
+							l'impression)</p>
+						<div class="malt">
+							<a target="_blank" class="hvr-float-shadow button--work"
+								href="https://www.malt.fr/profile/dimitribasseguy">Let's
+								work together...</a>
+							<img src="./src/img/coffee.gif" alt="" class="coffee">
+						</div>
+					</div>
+					<div id="identite" class="tabcontent">
+						<h3>Votre identité visuelle</h3>
+						<p>L'identité visuelle ou identité graphique est un ensemble d'éléments visuels cohérents qui permettent
+							d'identifier une même entité au travers des différents médias de communication qu'elle émet.</p>
+						<hr>
+						<p class="tarif"><em>Logo seul - </em><img src="src/img/monney.png"> 300 €</p>
+						<p>Création de votre logo. Livraison d'un fichier vectoriel HD</p>
+						<hr>
+						<p class="tarif"><em>Carte de Visite seule - </em><img src="src/img/monney.png"> 150 €</p>
+						<p>Création de votre carte de visite. Livraison d'une fichier PDF HD pour l'imprimeur.</p>
+						<hr>
+						<p class="tarif"><em>Charte graphique - </em><img src="src/img/monney.png"> à partir de 1500 €</p>
+						<p>Exemple de produits réalisés :
+							Logo | Carte de visite | Flyer, dépliant ou plaquette | Kakemono ou panneau | Marquage de véhicules |
+							Documents internes | Papier à entête et enveloppes | Devis et factures…</p>
+						<div class="malt">
+							<a target="_blank" class="hvr-float-shadow button--work"
+								href="https://www.malt.fr/profile/dimitribasseguy">Let's
+								work together...</a>
+							<img src="./src/img/coffee.gif" alt="" class="coffee">
+						</div>
+					</div>
+					<div id="web-marketing" class="tabcontent">
+						<h3>Votre présence en ligne</h3>
+						<p>Le webmarketing peut être défini avec une phrase toute simple : Utiliser Internet pour se faire
+							connaître, et / ou développer son activité. Mais on peut aussi approfondir un peu, et dire que c’est
+							l’ensemble des techniques de marketing et publicitaires utilisées dans un environnement Internet inspirées
+							des méthodes propres au marketing traditionnel.</p>
+						<hr>
+						<p class="tarif"><em>Publicité sur Google | Réseaux sociaux - </em><img src="src/img/monney.png"> 50 € /h
+						</p>
+						<p>Création / Gestion de vos campagnes publicitaire.</p>
+						<hr>
+						<p class="tarif"><em>E-mailling - </em><img src="src/img/monney.png"> 50 € /h
+						</p>
+						<p>Création / gestion de vos campagnes emailling Logiciel : Sendinblue / Sarbacanne / EmailStratégie etc...
+						</p>
+						<hr>
+						<p class="tarif"><em>Web-design - </em><img src="src/img/monney.png"> 50 € /h
+						</p>
+						<p>Création de vos sliders, bannières, design de vos pages produits, design de vos Publicités.
+						</p>
+						<div class="malt">
+							<a target="_blank" class="hvr-float-shadow button--work"
+								href="https://www.malt.fr/profile/dimitribasseguy">Let's
+								work together...</a>
+							<img src="./src/img/coffee.gif" alt="" class="coffee">
+						</div>
+					</div>
+					<div id="Vitrine" class="tabcontent">
+						<h3>Création Site web</h3>
+						<p class="tarif"><em>Site vitrine - </em><img src="src/img/monney.png"> à partir de 800 €</p>
+						<p>Votre site Vitrine comprend par exemple :</p>
+						<ul>
+							<li>Page d’accueil (description de l’activité)</li>
+							<li>Formulaire de contact (avec plan)</li>
+							<li>Page des tarifs de votre activité.</li>
+							<li>Page avis clients (mise en page des avis positifs laissés par vos clients)</li>
+							<li>Page «qui suis-je» (pour vous présenter aux futurs clients)</li>
+							<li>Création d’un hébergement web (nom de domaine + serveur + email pro)</li>
+							<li>Installation de wordpress (éditeur de site) + configuration</li>
+							<li>Installation d’un template (thème visuel optimisable) • Création de visuel pour habiller</li>
+							<li>Mode mobile (site lisible sur smartphone)</li>
+						</ul>
+						<div class="malt">
+							<a target="_blank" class="hvr-float-shadow button--work"
+								href="https://www.malt.fr/profile/dimitribasseguy">Let's
+								work together...</a>
+							<img src="./src/img/coffee.gif" alt="" class="coffee">
+						</div>
+					</div>
 				</div>
 				<hr />
 			</section>
@@ -190,7 +289,7 @@
 				<hr />
 			</section>
 			<!-- réalisations -->
-			<section>
+			<section id="real">
 				<h3>Réalisations</h3>
 				<div class="thumbnail">
 					<div class="thumbnail-cover"
@@ -253,14 +352,14 @@
 						<p class="thumbnail-title">Shadowrun-wiki</p>
 						<p class="thumbnail-description">Web app pour mon groupe de joueur shadowrun 4 (rpg)</p>
 						<div class="thumbnail-footer hvr-float-shadow">
-							<a href="https://todolistreactdimitri.netlify.app/" target="_blank">En savoir plus</a>
+							<a href="https://shadowrun-wiki.netlify.app" target="_blank">En savoir plus</a>
 						</div>
 					</div>
 				</div>
 				<hr />
 			</section>
 			<!-- parcours -->
-			<section>
+			<section id="parcours">
 				<h3>Parcours</h3>
 				<div class="path">
 					<div class="step">
@@ -317,6 +416,7 @@
 				</div>
 				<hr />
 			</section>
+			<!-- git stats -->
 			<section>
 				<div class="github-stats">
 					<div><img
@@ -333,6 +433,21 @@
 		</div>
 	</div>
 	<!-- <script src="./src/js/main.js"></script> -->
+	<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
 </body>
 
 </html>
