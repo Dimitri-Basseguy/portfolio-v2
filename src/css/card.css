@@ -35,7 +35,7 @@
     top: -50px;
     left: calc(50% - 50px);
     border: 5px solid white;
-    background-image: url("https://i.pinimg.com/originals/8a/9a/bc/8a9abc035407a3c110b8d52db3dff877.gif");
+    background-image: url("./../img/avatar.gif");
     background-size: cover;
 }
 
